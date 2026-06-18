@@ -13,6 +13,18 @@ Unreleased
 
 *No unreleased changes yet.*
 
+26.6.1 (2026-06-18)
+-------------------
+
+**Dependencies**
+
+* Require ``zlmdb >= 26.6.1`` and ``autobahn[all] >= 26.6.1`` for the coordinated WAMP 26.6.1 release (`#117 <https://github.com/crossbario/cfxdb/issues/117>`_)
+
+**Build & CI/CD**
+
+* Bump the shared ``wamp-ai`` (→ ``4669dc8``) and ``wamp-cicd`` (→ ``f77ca2b``) Git submodules to match the rest of the WAMP project group; the ``wamp-cicd`` bump carries the GHSA-6658 shell-injection hardening in the shared ``identifiers.yml`` reusable workflow (`#117 <https://github.com/crossbario/cfxdb/issues/117>`_)
+* Converge the GitHub Discussions release announcement onto a single mechanism, matching autobahn-python / txaio: the ``release-post-comment.yml`` workflow now resolves the ``ci-cd`` Discussions category **by name** (case-insensitive) and posts for both nightly and stable releases, and the redundant ``softprops`` ``discussion_category_name`` was removed from the release steps so a release posts exactly one announcement (`#117 <https://github.com/crossbario/cfxdb/issues/117>`_, resolves `#114 <https://github.com/crossbario/cfxdb/issues/114>`_)
+
 25.12.2 (2025-12-15)
 --------------------
 
