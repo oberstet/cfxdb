@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cfxdb"
-version = "25.12.2"
+version = "26.6.1"
 description = "Crossbar.io Database - Core database access classes for Crossbar.io"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -49,8 +49,8 @@ dependencies = [
     #   autobahn.wamp.serializer.JsonObjectSerializer in exporter, and
     #   autobahn.util for ID generation and activation codes in tests).
     #   The [all] extra ensures FlatBuffers serialization support is available.
-    "zlmdb>=25.12.2",
-    "autobahn[all]>=25.12.2",
+    "zlmdb>=26.6.1",
+    "autobahn[all]>=26.6.1",
 
     # Ethereum/Web3 stack (for XBR market maker and network schemas)
     "eth-abi>=5.1.0",

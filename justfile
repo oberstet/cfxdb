@@ -389,6 +389,7 @@ check-typing venv="":
         --ignore unresolved-global \
         --ignore possibly-missing-attribute \
         --ignore possibly-missing-import \
+        --ignore possibly-missing-submodule \
         --ignore call-non-callable \
         --ignore invalid-assignment \
         --ignore invalid-argument-type \
@@ -399,7 +400,7 @@ check-typing venv="":
         --ignore too-many-positional-arguments \
         --ignore unknown-argument \
         --ignore missing-argument \
-        --ignore non-subscriptable \
+        --ignore not-subscriptable \
         --ignore not-iterable \
         --ignore no-matching-overload \
         --ignore conflicting-declarations \
